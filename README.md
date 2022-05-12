@@ -38,7 +38,7 @@ jupyter notebook
 
 ![](https://i.imgur.com/EHYLqpW.png)
 
-這幾乎等於是從 10 種音樂類型隨邊亂猜猜對的機率，
+這幾乎等於是從 10 種音樂類型隨便亂猜猜對的機率，
 
 故最終模型訓練使用的特徵以 MFCC 的 13 個波段呈現。
 
