@@ -48,7 +48,9 @@ jupyter notebook
 
 並使用 librosa (python package) 對這些音樂片段進行分析以獲得 MFCC 的數值。
 
-接著將這些數據切割，切割訓練資料與測試資料，train_size : test_size = 8 : 2
+接著使用 sklearn 的 train_test_split 將這些數據切割，
+
+切割訓練資料與測試資料，train_size : test_size = 8 : 2
 
 其中，訓練資料又將被切分出訓練集與驗證集 train : validation = 8 : 2
 
@@ -59,12 +61,13 @@ jupyter notebook
 hyperparameter:
 - epochs=30
 - batch_size=32
+- learning_rate=0.001
 
 ## 分類準確率
 
-||第一次|第二次|第三次|平均|
-|--|--|--|--|--|
-|accuracy|0.82625 (661 / 800)|0.8275 (662 / 800)|0.835 (668 / 800)|0.8296|
+||第一次|第二次|第三次|第四次|第五次|平均|
+|--|--|--|--|--|--|--|
+|accuracy|0.82625 (661 / 800)|0.8275 (662 / 800)|0.835 (668 / 800)|0.83 (664 / 800)|0.85875 (687 / 800)|0.8355|
 
 下圖為其中一次訓練過程的 accuracy 與 loss
 
